@@ -18,7 +18,11 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "dev:frontend": "pnpm --dir Frontend dev",
+    "dev:backend": "pnpm --dir Backend dev",
+    "build:frontend": "pnpm --dir Frontend build",
+    "build:backend": "pnpm --dir Backend build"
   },
   "lint-staged": {
     "frontend/**/*.{js,jsx,ts,tsx}": [
