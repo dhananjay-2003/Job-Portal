@@ -27,7 +27,7 @@ export default tseslint.config(
   // FRONTEND
   // ==============================
   {
-    files: ['frontend/**/*.{js,jsx,ts,tsx}'],
+    files: ['Frontend/**/*.{js,jsx,ts,tsx}'],
 
     languageOptions: {
       globals: {
