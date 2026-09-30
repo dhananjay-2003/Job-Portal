@@ -3,8 +3,6 @@ dotenv.config();
 
 const requiredEnvVariable = ['MONGODB_URI'] as const;
 
-console.log(process.env.MONGODB_URI, 'dgfg');
-
 for (const variable of requiredEnvVariable) {
   if (!process.env[variable]) {
     throw new Error(`missing Environment variable : ${variable}`);
