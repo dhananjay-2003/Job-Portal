@@ -1,14 +1,12 @@
 import { Request, Response } from 'express';
 import { signupValidationSchema } from './signup.validation.js';
 import { signup } from './signup.service.js';
-import { randomUUID } from 'crypto';
 
 export const signupController = async (req: Request, res: Response) => {
   try {
     const data = signupValidationSchema.parse(req.body);
 
     const result = await signup(
-      randomUUID(),
       data.email,
       data.mobileNo,
       data.firstName,

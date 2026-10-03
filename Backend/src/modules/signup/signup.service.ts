@@ -5,7 +5,6 @@ import { hashToken } from '../auth/utils/hashToken.js';
 import { hashPassowrd } from '../auth/utils/password.js';
 
 export const signup = async (
-  uuid: string,
   email: string,
   mobileNo: string,
   firstName: string,
@@ -29,7 +28,6 @@ export const signup = async (
   const passwordHash = await hashPassowrd(password);
 
   const user = await User.create({
-    uuid,
     email: normalizedEmail,
     mobileNo: normalizedMobileNo,
     password: passwordHash,
