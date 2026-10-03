@@ -14,5 +14,3 @@ export const env = {
   port: Number(process.env.BACKEND_PORT),
   mongodbUri: String(process.env.MONGODB_URI),
 };
-
-console.log(env, 'env');
