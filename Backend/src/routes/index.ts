@@ -1,6 +1,8 @@
 import { Router } from 'express';
-import signupRoutes from '../modules/signup/signup.routes.js';
+import authRouter from '../modules/auth/auth.routes.js';
 
 const router = Router();
-router.use('/auth', signupRoutes);
+
+router.use('/auth', authRouter);
+
 export default router;

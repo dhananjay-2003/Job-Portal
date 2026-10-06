@@ -1,8 +1,8 @@
-import { RefreshToken } from '../../models/refresh/refresh.model.js';
-import { User } from '../../models/user/user.model.js';
-import { tokenService } from '../auth/auth.service.js';
-import { hashToken } from '../auth/utils/hashToken.js';
-import { hashPassowrd } from '../auth/utils/password.js';
+import { RefreshToken } from '../../../models/refresh/refresh.model.js';
+import { User } from '../../../models/user/user.model.js';
+import { tokenService } from '../auth.service.js';
+import { hashToken } from '../utils/hashToken.js';
+import { hashPassowrd } from '../utils/password.js';
 
 export const signup = async (
   email: string,
